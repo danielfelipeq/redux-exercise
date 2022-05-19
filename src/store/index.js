@@ -1,17 +1,16 @@
 import { createStore } from "redux";
 const initialTask = {
-  title: "",
+  /*   title: "",
   description: "",
-  priority: null,
+  priority: null, */
+  tasks: [],
 };
 const reducer = (state = initialTask, action) => {
   switch (action.type) {
     case "ADD_TASK":
       return {
         ...state,
-        title: action.payload.title,
-        description: action.payload.description,
-        priority: action.payload.priority,
+        tasks: [...state.tasks, action.payload],
       };
     default:
       return state;

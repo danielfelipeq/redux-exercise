@@ -3,12 +3,16 @@ import { Form } from "./components/Form";
 import { Task } from "./components/Task";
 function App() {
   return (
-    <div className="App">
-      <Form />
-      <div>
-        <Task />
+    <>
+      <div className="App">
+        <div>
+          <Form />
+        </div>
+        <div>
+          <Task />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
