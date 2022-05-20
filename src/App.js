@@ -5,10 +5,10 @@ function App() {
   return (
     <>
       <div className="App">
-        <div>
+        <div className="form-container">
           <Form />
         </div>
-        <div>
+        <div className="task-container">
           <Task />
         </div>
       </div>
